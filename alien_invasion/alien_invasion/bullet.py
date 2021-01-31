@@ -10,6 +10,7 @@ class Bullet(Sprite):
 		self.screen=screen
 
 		#在（0，0）出创建一个表示子弹的矩形，再设置正确的位置
+#		ai_settings.bullet_width=300		#设置子弹的宽度，用于测试
 		self.rect=pygame.Rect(0,0,ai_settings.bullet_width,ai_settings.bullet_height)
 		self.rect.centerx=ship.rect.centerx
 		self.rect.top=ship.rect.top
